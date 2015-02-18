@@ -127,12 +127,12 @@ function letterIndex(stringEntered) {
 
 // HINT: use an array and the modulo (%) operator
 
-function reverseLetterIndex(i) {
+function reverseLetterIndex(nmbr) {
   var letter, alphabet;
 
 alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
-i = alphabet[i % 26];
+letter = alphabet[nmbr % alphabet.length];
 
 return letter;
 }
